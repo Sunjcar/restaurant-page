@@ -9,18 +9,23 @@
     box-sizing:border-box;
 }
 
+body{
+    background-color: #ecfeff;
+}
+
 nav{
     display:flex;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center;  
     padding:2rem;
     font-size: 2rem;
-    background-color: #cffafe;
 }
 
 #home, #menu, #about{
     cursor: pointer;
+    background-color: #cffafe;
+    padding:1rem;
+    border-radius: 1rem;
 }
 
 .flex-container{
@@ -30,12 +35,14 @@ nav{
     justify-content: space-between;
 }
 #content{
+    position:relative;
     height: 100vh;
     color:#27272a;
     display:grid;
     grid-template-areas: 
         'home-image home-head'
-        'home-image quote';
+        'home-image quote'
+        'photo .';
 }
 
 .homeImg{
@@ -44,11 +51,15 @@ nav{
     height: 100vh;
     width: 40vw;
     max-width: 600px;
-    position: relative;
     grid-area: home-image;
 }
 
-#content .homeHead {
+.photo-credit{
+    position:absolute;
+    bottom: 2px;
+}
+
+.homeHead {
     font-family: Macondo, sans-serif;
     padding:1rem;
     font-style:italic;
@@ -123,7 +134,7 @@ footer {
     padding: 10px;
     font-size: 20px;
     gap: 10px;
-    background-color: #cffafe;
+    background-color: #0c4a6e;
 }
 
 .fa-github {
@@ -133,4 +144,12 @@ footer {
 }
 .fa-github:hover {
     transform: rotate(720deg) scale(1.5);
+}
+
+#home:hover, #menu:hover, #about:hover{
+    filter: brightness(1.1);
+}
+
+#home:active, #menu:active, #about:active{
+    background: white;
 }
