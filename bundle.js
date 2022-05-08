@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.getElementById("home"),t=document.getElementById("menu"),n=document.getElementById("about");function c(){document.getElementById("content").textContent=""}e.addEventListener("click",(()=>{c()})),t.addEventListener("click",(()=>{c()})),n.addEventListener("click",(()=>{c()}))})();
