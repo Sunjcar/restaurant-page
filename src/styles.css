@@ -1,3 +1,32 @@
-nav{
-    display:flex;
+#content{
+    height: 100vh;
+    color:#27272a;
+    display:grid;
+    grid-template-areas: 
+        'menu-head menu-head'
+        'img img1'
+        'img2 img3';
+}
+.menuHead{
+    grid-area: menu-head;
+}
+.menuImg, .menuImg1, .menuImg2, .menuImg3{
+    width: 25vw;
+    height:25vh;
+}
+
+.menuImg{
+    grid-area: img;
+}
+
+.menuImg1{
+    grid-area: img1
+}
+
+.menuImg2{
+    grid-area: img2
+}
+
+.menuImg3{
+    grid-area: img3
 }
