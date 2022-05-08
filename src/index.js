@@ -11,11 +11,13 @@ const content = document.getElementById('content')
 navHome.addEventListener('click',() => {
     clearContent();
     home();
+    content.style.gridTemplateAreas = '"home-image home-head""home-image quote"';
 })
 
 navMenu.addEventListener('click', () => {
     clearContent();
     menu();
+    content.style.gridTemplateAreas = '". menu-head menu-head ."". img img1 ."". p p1 ."". img2 img3 ."". p2 p3 ."'; 
    
 })
 

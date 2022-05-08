@@ -1,3 +1,8 @@
+@font-face{
+    font-family: Macondo;
+    src: url(fonts/Macondo-Regular.ttf)
+}
+
 *{
     margin:0;
     padding:0;
@@ -29,10 +34,6 @@ nav{
     color:#27272a;
     display:grid;
     grid-template-areas: 
-        'menu-head menu-head'
-        'img img1'
-        'img2 img3';
-    grid-template-areas: 
         'home-image home-head'
         'home-image quote';
 }
@@ -48,7 +49,7 @@ nav{
 }
 
 #content .homeHead {
-  
+    font-family: Macondo, sans-serif;
     padding:1rem;
     font-style:italic;
     grid-area: home-head;
@@ -56,6 +57,7 @@ nav{
 }
 
 .quote{
+    font-family: Macondo, sans-serif;
     padding:1rem;
     width: 20rem;
     height: 60vh;
@@ -68,7 +70,14 @@ nav{
 }
 .menuImg, .menuImg1, .menuImg2, .menuImg3{
     width: 25vw;
-    height:25vh;
+    height:40vh;
+
+}
+
+.menu-item, .menu-item1, .menu-item2, .menu-item3{
+    font-family: Macondo, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .menuImg{
@@ -87,6 +96,23 @@ nav{
     grid-area: img3
 }
 
+
+.menu-item{
+    grid-area: p
+}
+
+.menu-item1{
+    grid-area: p1
+}
+
+.menu-item2{
+    grid-area: p2
+}
+
+.menu-item3{
+    grid-area:p3;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -97,7 +123,7 @@ footer {
     padding: 10px;
     font-size: 20px;
     gap: 10px;
-    margin-top:1rem;
+    background-color: #cffafe;
 }
 
 .fa-github {
