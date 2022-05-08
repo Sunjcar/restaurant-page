@@ -42,7 +42,7 @@ nav{
     grid-template-areas: 
         'home-image home-head'
         'home-image quote'
-        'photo .';
+        
 }
 
 .homeImg{
@@ -89,6 +89,7 @@ nav{
     font-family: Macondo, sans-serif;
     font-size: larger;
     font-weight: bolder;
+    
 }
 
 .menuImg{
@@ -122,6 +123,57 @@ nav{
 
 .menu-item3{
     grid-area:p3;
+}
+
+.picture{
+    background-repeat: no-repeat;
+    background-image: url(./images/calum-lewis-vA1L1jRTM70-unsplash.jpg);
+    width:40vw;
+    height: 100vh;
+    max-width: 600px;
+    grid-area:picture;
+}
+.aboutHead{
+
+    grid-area: contact
+}
+
+.number{ 
+    grid-area: number
+}
+.hours{
+    grid-area: hours;
+    
+}
+
+.monday, .tuesday, .wedensday, .thursday, .friday,.weekend, .aboutHead, .hours, .number{
+    font-family: Macondo, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.monday{
+    grid-area: monday;
+}
+
+.tuesday{
+    grid-area: tuesday;
+}
+
+.wedensday{
+    grid-area: wedensday;
+}
+
+.thursday{
+    grid-area: thursday;
+}
+
+.friday{
+    grid-area: friday;
+}
+
+.weekend{
+    grid-area:weekend;
 }
 
 footer {
