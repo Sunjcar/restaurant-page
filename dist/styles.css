@@ -10,7 +10,16 @@
 }
 
 body{
+    background-image: url(./images/henry-co-3JFVNo4ukKQ-unsplash.jpg);
     background-color: #ecfeff;
+    position:relative
+}
+
+.background-credit{
+    position:absolute;
+    bottom: 0px;
+    right:0px;
+    color:white
 }
 
 nav{
@@ -37,7 +46,7 @@ nav{
 #content{
     position:relative;
     height: 100vh;
-    color:#27272a;
+    color:whitesmoke;
     display:grid;
     grid-template-areas: 
         'home-image home-head'
@@ -55,6 +64,7 @@ nav{
 }
 
 .photo-credit{
+    color:black;
     position:absolute;
     bottom: 2px;
 }
@@ -82,6 +92,7 @@ nav{
 .menuImg, .menuImg1, .menuImg2, .menuImg3{
     width: 25vw;
     height:40vh;
+    margin-top: 1rem;
 
 }
 
@@ -89,6 +100,12 @@ nav{
     font-family: Macondo, sans-serif;
     font-size: larger;
     font-weight: bolder;
+    background-color:#44403c;
+    width:10rem;
+    border-radius:1rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -186,13 +203,14 @@ footer {
     padding: 10px;
     font-size: 20px;
     gap: 10px;
-    background-color: #0c4a6e;
+    color:#ecfeff;
+    
 }
 
 .fa-github {
     font-size: 30px;
     transition: 0.3s ease-in-out;
-    color: black;
+    color: #ecfeff;
 }
 .fa-github:hover {
     transform: rotate(720deg) scale(1.5);
