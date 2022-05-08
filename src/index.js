@@ -24,6 +24,8 @@ navMenu.addEventListener('click', () => {
 navAbout.addEventListener('click', () => {
     clearContent();
     about();
+    content.style.gridTemplateAreas = ' " picture contact hours ."" picture number monday ." " picture . tuesday  ." "picture . wedensday  ." "picture . thursday  ." "picture . friday ." "picture . weekend." ';
+
 })
 
 
