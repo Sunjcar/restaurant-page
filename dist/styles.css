@@ -223,3 +223,18 @@ footer {
 #home:active, #menu:active, #about:active{
     background: white;
 }
+
+@media only screen and (max-width: 600px)  {
+    #content{
+        flex-flow: column;
+        text-align: center;
+        overflow:auto;
+        
+    }
+    .homeImg, .picture {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+
+}
