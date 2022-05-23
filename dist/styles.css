@@ -148,6 +148,7 @@ nav{
     width:40vw;
     height: 100vh;
     max-width: 600px;
+    object-fit: contain;
     grid-area:picture;
 }
 .aboutHead{
